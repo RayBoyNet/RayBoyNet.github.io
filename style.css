@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+  display: flex;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.one {
+  background: url(./pexels-flo-maderebner-869258.jpg);
+  height: 200vh;
+  background-attachment: fixed;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.title {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+h2 {
+  font-size: 40px;
+  justify-self: center;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black;
+  font-family: sans-serif;
+}
+.middle > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+h3:hover {
+  color: white;
+}
+
+h2 > span:hover {
+  color: white;
+}
+
+li:hover {
+  opacity: 0.5;
+}
+
+/* color: rgb(7, 237, 253); */
+
+@keyframes change {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 35px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
